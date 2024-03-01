@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <Button
+        android:id="@+id/emaileditor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text="Email Editor" />
+
+
+    <Button
+        android:id="@+id/testbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="Test Button" />
+
+    <TextView
+        android:id="@+id/youremailis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="Your email is:"
+        android:layout_below="@+id/emaileditor"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMAIL"
+        android:layout_below="@+id/youremailis"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="serif"
+        android:visibility="invisible"
+        />
+
+
+
+
+
+
+</RelativeLayout>
+
