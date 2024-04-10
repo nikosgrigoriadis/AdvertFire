@@ -14,13 +14,14 @@ import java.util.ArrayList;
 public class MainActivity2 extends AppCompatActivity {
 
     Button btnBack , buttonSend;
-    EditText editTextTextEmailAddress , editTextTextMultiLine;
+    EditText editTextTextEmailAddress , editTextTextEmailAddress2, editTextTextMultiLine;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
         editTextTextEmailAddress = findViewById(R.id.editTextTextEmailAddress);
+        editTextTextEmailAddress2 = findViewById(R.id.editTextTextEmailAddress);
         editTextTextMultiLine = findViewById(R.id.editTextTextMultiLine);
         btnBack = (Button) findViewById(R.id.btnBack);
         btnBack.setOnClickListener(new View.OnClickListener() {
@@ -36,6 +37,7 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 sendEmail();
+                System.out.println("recipient2");
             }
         });
     }
@@ -45,12 +47,13 @@ public class MainActivity2 extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void sendEmail() {
-        //String[] recipient = {};
-        ArrayList<String> recipients = new ArrayList<>();
 
-        String recipient1 = editTextTextEmailAddress.getText().toString();
-        recipients.add(recipient1);
+    private void sendEmail() {
+
+
+        String[] recipients = {"kastnet8@gmail.com","nikos678k@gmail.com"};
+        //String recdemo =  editTextTextEmailAddress.getText().toString();
+
         String subject = "Put your subject here";
         String content = editTextTextMultiLine.getText().toString();
 
