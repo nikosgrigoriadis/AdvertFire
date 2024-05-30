@@ -4,24 +4,134 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:clipToPadding="false"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:elevation="100dp"
-        android:background="@color/material_dynamic_neutral70"
+        android:id="@+id/toptoolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#9900ff"
+        android:elevation="100dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Emails"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
     </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_below="@id/toptoolbar">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background=" #f5e6ff"
+                android:padding="16dp"
+                android:text="test@gmail.com"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background=" #f5e6ff"
+                android:padding="16dp"
+                android:text="email@gmail.com"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background=" #f5e6ff"
+                android:padding="16dp"
+                android:text="email@gmail.com"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background=" #f5e6ff"
+                android:padding="16dp"
+                android:text="email@gmail.com"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background=" #f5e6ff"
+                android:padding="16dp"
+                android:text="email@gmail.com"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background=" #f5e6ff"
+                android:padding="16dp"
+                android:text="email@gmail.com"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background=" #f5e6ff"
+                android:padding="16dp"
+                android:text="email@gmail.com"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background=" #f5e6ff"
+                android:padding="16dp"
+                android:text="email@gmail.com"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background=" #f5e6ff"
+                android:padding="16dp"
+                android:text="email@gmail.com"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <Button
         android:id="@+id/emaileditor"

@@ -5,9 +5,11 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +28,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        String[] recipients = {"kastnet8@gmail.com","nikos678k@gmail.com"};
+        LinearLayout linearLayout = findViewById(R.id.linearLayout);
+
+
+        for (String emails : recipients) {
+            /*TextView textView = new TextView(this);
+            textView.setTextColor(getResources().getColor(R.color.black));
+            textView.setTextSize(40);
+
+            Log.d("TextViewCreation", "TextView created with text: " + emails); */
+
+            View view = getLayoutInflater().inflate(R.layout.activity_main, null);
+            //na to kano na douleuei dynamic
+            linearLayout.addView(view);
+
+        }
 
         emaileditor = (Button) findViewById(R.id.emaileditor);
 
